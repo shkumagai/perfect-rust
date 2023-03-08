@@ -17,6 +17,7 @@ pub fn symbol() {
     result = 10 % 3;            //整数の剰余
     println!("10 % 3 = {}", result);
 }
+
 /// ### リスト2.３
 /// #### 算術演算メソッドの利用と結果の出力
 /// #### 引数 x, y 計算対象の値
@@ -31,6 +32,7 @@ pub fn methods(x: i32, y: i32){
     println!("{} / {} = {}", x, y, x.div(y));
     println!("{} % {} = {}", x, y, x.rem(y));
 }
+
 /// ### リスト2.4
 /// #### オーバーフローを起こす計算
 #[allow(dead_code)]
@@ -40,6 +42,7 @@ pub fn overflow(){
     let result = x + y;
     println!("{} + {} = {}", x, y, result);
 }
+
 /// ### リスト2.5
 /// #### オーバーフローを無視する
 #[allow(dead_code)]
@@ -49,6 +52,7 @@ pub fn ignore_overflow(){
     let result = x.wrapping_add(y);
     println!("{} + {} = {}", x, y, result);
 }
+
 /// ### リスト２．６
 /// #### Option<T>型でオーバーフローを確認する
 #[allow(dead_code)]
@@ -60,6 +64,7 @@ pub fn check_option_overflow(){
         None => println!("オーバーフローしました")
     }
 }
+
 /// ### リスト２．７
 /// #### 論理値でオーバーフローを確認する
 #[allow(dead_code)]
@@ -73,6 +78,7 @@ pub fn check_boolean_overflow(){
         println!("{} + {} = {}", x, y, result);
     }
 }
+
 /// ### リスト2.8
 /// #### オーバーフローしたら最大値を返す
 #[allow(dead_code)]
